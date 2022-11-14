@@ -46,6 +46,10 @@ public class MedioDeTransporte {
         this.cantidadMaxima = cantidadMaxima;
     }
 
+    public void cargar(objetosTransportables transportables){
+        getTransportables().add(transportables);
+    }
+
     MedioDeTransporte(double capacidadMaxima, Dimension dimension, int cantidadMaxima){
         setTransportables(new ArrayList<objetosTransportables>());
         setCapacidadActual(0);
