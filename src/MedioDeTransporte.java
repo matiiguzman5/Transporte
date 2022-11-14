@@ -47,6 +47,7 @@ public class MedioDeTransporte {
     }
 
     public void cargar(objetosTransportables transportables){
+        if (getTransportables().size() >=  getCantidadMaxima()) return;
         getTransportables().add(transportables);
     }
 
